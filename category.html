@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gifted | Categories</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/category.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body class="grid-container">
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="dropbar">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="/index.html"><label class="logo">Gifted</label></a>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/buscar.html">Buscar</a></li>
+            <li><a class="active" href="/category.html">Categorias</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <h4>Tendencias</h4>
+        <ul>
+            <li>Gatos</li>
+            <li>Graciosos</li>
+            <li>Vehiculos</li>
+            <li>Mascotas</li>
+            <li>Animales</li>
+            <li>Saludos</li>
+            <li>The Office</li>
+            <li>Series</li>
+        </ul>
+    </aside>
+    <section class="content">
+        <div class="gif-categories">
+            <div class="row-flex">
+                <h4> <i class="far fa-futbol"></i> Deportes</h4>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/ZnoXjp9pM4K7iLOdEB/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/kyNMa7b3mUZjVQ8rhB/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/AvSW7NzaYehwVVLZYo/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media2.giphy.com/media/sDzYIPkbbUFEJ8Gk56/giphy.gif?cid=ecf05e471f5c97aa08dd860fdb9f0592ac0a66b23981c97c&rid=giphy.gif&ct=g">
+                </div>
+            </div>
+            <div class="row-flex">
+                <h4> <i class="fas fa-dog"></i> Animales</h4>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/NAUkIfPXR4LO2LTNV9/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/QBosWy0XVrehzTJ2pF/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/lAPlSFECBiQA7xI5oG/giphy.gif">
+                </div>
+            </div>
+            <div class="row-flex">
+                <h4><i class="far fa-smile-wink"></i> Comedia</h4>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/12J28qxlb4sfFm/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/YPnK7o73Y7zqja61Ez/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/3ohhweiVB36rAlqVCE/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/fxZPrsux3vlFY6UQs6/giphy.gif">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Gifted</p>
+        <span>Copyright &copy; 2022</span>
+    </footer>
+
+    <script>
+        var gifContainer = document.getElementsByClassName('gif-container')
+        for (let element of gifContainer) {
+            element.addEventListener('click', function () {
+                window.location = '/detalle.html'
+            })
+        }
+    </script>
+</body>
+
+</html>

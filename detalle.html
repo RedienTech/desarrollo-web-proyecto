@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gifted | Detalle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/detalle.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body class="grid-container">
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="dropbar">
+            <i class="fa fa-bars"></i>
+        </label>
+        <a href="/index.html"><label class="logo">Gifted</label></a>
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="/buscar.html">Buscar</a></li>
+            <li><a href="/category.html">Categorias</a></li>
+        </ul>
+    </nav>
+    <section class="content">
+        <div class="gif-detail">
+            <div class="info-detail">
+                <ul>
+                    <li>
+                        <strong>Subido:</strong> artygift87
+                    </li>
+                    <li>
+                        <strong>Fecha:</strong> 02-Junio-2020
+                    </li>
+                    <li>
+                        <strong>Peso</strong> 68 Kb
+                    </li>
+                    <li>
+                        <strong>Resolucion:</strong> 512x512
+                    </li>
+                </ul>
+            </div>
+            <div class="gif-detail-container">
+                <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif">
+            </div>
+            <div class="action-detail">
+                <ul>
+                    <li> <i class="fas fa-download"></i> Descargar</li>
+                    <li><i class="fas fa-share"></i> Compartir</li>
+                    <li><i class="fas fa-heart"></i> Favorito</li>
+                </ul>
+            </div>
+        </div>
+        <div class="gif-tending">
+            <div class="message-detail">Otros Gifs que te podrian interesar...</div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/kyNMa7b3mUZjVQ8rhB/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/UmY95rNE0bQnS/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/STXfoyQhOKTRmdmZQR/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/d6nvFKK6Dr9YbBDeNQ/giphy.gif">
+                </div>
+            </div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/ZnoXjp9pM4K7iLOdEB/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/NAUkIfPXR4LO2LTNV9/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/12J28qxlb4sfFm/giphy.gif">
+                </div>
+            </div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/QBosWy0XVrehzTJ2pF/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/60L3DcgPBNIJ2/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/lAPlSFECBiQA7xI5oG/giphy.gif">
+                </div>
+            </div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/YPnK7o73Y7zqja61Ez/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/3ohhweiVB36rAlqVCE/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/fxZPrsux3vlFY6UQs6/giphy.gif">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Gifted</p>
+        <span>Copyright &copy; 2022</span>
+    </footer>
+    <script>
+        var gifContainer = document.getElementsByClassName('gif-container')
+        for (let element of gifContainer) {
+            element.addEventListener('click', function () {
+                window.location = '/detalle.html'
+            })
+        }
+    </script>
+</body>
+
+</html>

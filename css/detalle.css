@@ -1,0 +1,133 @@
+.content {
+    grid-area: content;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    display: grid;
+}
+
+/* .gif-tending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+} */
+
+.gif-tending {
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+        "navbar"
+        "content"
+        "footer";
+}
+
+.column-flex {
+    width: 98%;
+}
+
+.gif-detail {
+    text-align: center;
+    display: grid;
+    grid-template-areas: "info""gif""actions";
+    margin-bottom: 40px;
+}
+
+.info-detail {
+    grid-area: info;
+}
+
+.info-detail ul li {
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.action-detail ul li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.action-detail ul li:hover {
+    transform: scale(1.1);
+    background-color: #09f;
+    color: #fff;
+}
+
+.message-detail {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.gif-detail-container {
+    grid-area: gif;
+    text-align: center;
+}
+
+.action-detail {
+    grid-area: actions;
+}
+
+.gif-detail-container {
+    margin: auto;
+    width: 100%;
+}
+
+.gif-detail-container img {
+    margin: auto;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .grid-container {
+        grid-template-columns: 20% auto;
+        grid-template-rows: 80px auto 150px;
+        grid-template-areas:
+            "navbar navbar"
+            "content content"
+            "footer footer";
+    }
+
+    .column-flex {
+      width: 24%;
+  }
+
+  .gif-detail .gif-detail-container {
+    width: 80%;
+    margin: auto;
+    }
+
+    .gif-detail {
+        grid-template-areas: 
+            "info gif actions";
+        grid-template-columns: 25% 50% 25%;
+    }
+
+}
+
+.gif-container {
+    width: auto;
+    padding: 5px 0;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.gif-container img {
+    width: 100%;
+    height: auto;
+}

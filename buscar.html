@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gifted | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/buscar.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body class="grid-container">
+    <nav class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check" class="dropbar">
+            <i class="fa fa-bars"></i>
+        </label>
+        <a href="/index.html"><label class="logo">Gifted</label></a>
+        <ul>
+            <li><a  href="/index.html">Home</a></li>
+            <li><a class="active" href="/buscar.html">Buscar</a></li>
+            <li><a href="/category.html">Categorias</a></li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <h4>Ultimas Busquedas</h4>
+        <ul>
+            <li>Memes</li>
+            <li>Liverpool</li>
+            <li>League Of Legends</li>
+            <li>Formula 1</li>
+            <li>Yes</li>
+            <li>Videojuegos</li>
+            <li>The Office</li>
+            <li>GOT</li>
+        </ul>
+    </aside>
+    <section class="content">
+        <div class="gif-result">
+            <div class="search-bar">
+                <input type="search">
+                <button>Buscar</button>
+            </div>
+            <div class="search-message">
+                <p>Hemos encontrado los siguientes Gifs de "Gatos" para ti!!</p>
+            </div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/l4KibK3JwaVo0CjDO/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/13CoXDiaCcCoyk/giphy.gif">
+                </div>
+            </div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/JUpk5m3SD4rLm7JAY1/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/q1MeAPDDMb43K/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif">
+                </div>
+            </div>
+            <div class="column-flex">
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/5i7umUqAOYYEw/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/C9x8gX02SnMIoAClXa/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif">
+                </div>
+                <div class="gif-container">
+                    <img src="https://media.giphy.com/media/QObPo575HQHlGMhbae/giphy.gif">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Gifted</p>
+        <span>Copyright &copy; 2022</span>
+    </footer>
+    <script>
+        var gifContainer = document.getElementsByClassName('gif-container')
+        for (let element of gifContainer) {
+            element.addEventListener('click', function () {
+                window.location = '/detalle.html'
+            })
+        }
+    </script>
+</body>
+
+</html>
